@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0374C14261E0B9F00907A44 /* Person2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0374C13261E0B9F00907A44 /* Person2.swift */; };
+		B0510554261F29BF00B97CF2 /* SwiftPersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0510553261F29BF00B97CF2 /* SwiftPersonTest.swift */; };
+		B0510559261F35F100B97CF2 /* OCPersonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B0510558261F35F100B97CF2 /* OCPersonTest.m */; };
 		B076A98A261D842A00C11996 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B076A989261D842A00C11996 /* AppDelegate.m */; };
 		B076A98D261D842A00C11996 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B076A98C261D842A00C11996 /* SceneDelegate.m */; };
 		B076A990261D842A00C11996 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B076A98F261D842A00C11996 /* ViewController.m */; };
@@ -14,9 +17,15 @@
 		B076A995261D842B00C11996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B076A994261D842B00C11996 /* Assets.xcassets */; };
 		B076A998261D842B00C11996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B076A996261D842B00C11996 /* LaunchScreen.storyboard */; };
 		B076A99B261D842B00C11996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B076A99A261D842B00C11996 /* main.m */; };
+		B076A9A4261D941000C11996 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B076A9A3261D941000C11996 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0374C12261E0B9E00907A44 /* OCDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B0374C13261E0B9F00907A44 /* Person2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person2.swift; sourceTree = "<group>"; };
+		B0510553261F29BF00B97CF2 /* SwiftPersonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPersonTest.swift; sourceTree = "<group>"; };
+		B0510557261F35F100B97CF2 /* OCPersonTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPersonTest.h; sourceTree = "<group>"; };
+		B0510558261F35F100B97CF2 /* OCPersonTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPersonTest.m; sourceTree = "<group>"; };
 		B076A985261D842A00C11996 /* OCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B076A988261D842A00C11996 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B076A989261D842A00C11996 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +38,8 @@
 		B076A997261D842B00C11996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B076A999261D842B00C11996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B076A99A261D842B00C11996 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B076A9A2261D941000C11996 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B076A9A3261D941000C11996 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +53,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0510550261F275A00B97CF2 /* TestOC+Swfit */ = {
+			isa = PBXGroup;
+			children = (
+				B0510551261F276200B97CF2 /* PersonOC+Swift */,
+			);
+			path = "TestOC+Swfit";
+			sourceTree = "<group>";
+		};
+		B0510551261F276200B97CF2 /* PersonOC+Swift */ = {
+			isa = PBXGroup;
+			children = (
+				B076A9A2261D941000C11996 /* Person.h */,
+				B076A9A3261D941000C11996 /* Person.m */,
+				B0374C13261E0B9F00907A44 /* Person2.swift */,
+				B0510553261F29BF00B97CF2 /* SwiftPersonTest.swift */,
+				B0510557261F35F100B97CF2 /* OCPersonTest.h */,
+				B0510558261F35F100B97CF2 /* OCPersonTest.m */,
+			);
+			path = "PersonOC+Swift";
+			sourceTree = "<group>";
+		};
 		B076A97C261D842A00C11996 = {
 			isa = PBXGroup;
 			children = (
@@ -67,11 +99,13 @@
 				B076A98C261D842A00C11996 /* SceneDelegate.m */,
 				B076A98E261D842A00C11996 /* ViewController.h */,
 				B076A98F261D842A00C11996 /* ViewController.m */,
+				B0510550261F275A00B97CF2 /* TestOC+Swfit */,
 				B076A991261D842A00C11996 /* Main.storyboard */,
 				B076A994261D842B00C11996 /* Assets.xcassets */,
 				B076A996261D842B00C11996 /* LaunchScreen.storyboard */,
 				B076A999261D842B00C11996 /* Info.plist */,
 				B076A99A261D842B00C11996 /* main.m */,
+				B0374C12261E0B9E00907A44 /* OCDemo-Bridging-Header.h */,
 			);
 			path = OCDemo;
 			sourceTree = "<group>";
@@ -106,6 +140,7 @@
 				TargetAttributes = {
 					B076A984261D842A00C11996 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -147,6 +182,10 @@
 			files = (
 				B076A990261D842A00C11996 /* ViewController.m in Sources */,
 				B076A98A261D842A00C11996 /* AppDelegate.m in Sources */,
+				B0510559261F35F100B97CF2 /* OCPersonTest.m in Sources */,
+				B076A9A4261D941000C11996 /* Person.m in Sources */,
+				B0374C14261E0B9F00907A44 /* Person2.swift in Sources */,
+				B0510554261F29BF00B97CF2 /* SwiftPersonTest.swift in Sources */,
 				B076A99B261D842B00C11996 /* main.m in Sources */,
 				B076A98D261D842A00C11996 /* SceneDelegate.m in Sources */,
 			);
@@ -291,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TQLD765K3;
 				INFOPLIST_FILE = OCDemo/Info.plist;
@@ -300,6 +340,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.static.OCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCDemo/OCDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TQLD765K3;
 				INFOPLIST_FILE = OCDemo/Info.plist;
@@ -318,6 +362,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.static.OCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCDemo/OCDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -6,9 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Person.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController 
 
 @end
 
