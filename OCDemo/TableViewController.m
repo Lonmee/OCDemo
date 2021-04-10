@@ -5,15 +5,15 @@
 //  Created by Lonmee on 4/10/21.
 //
 
-#import "MainTableViewController.h"
+#import "TableViewController.h"
 
-@interface MainTableViewController () {
+@interface TableViewController () {
     NSMutableArray * persons;
 }
 
 @end
 
-@implementation MainTableViewController
+@implementation TableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

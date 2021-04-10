@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B011DDC82621428700476352 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B011DDC62621428700476352 /* MainTableViewController.m */; };
+		B011DDC82621428700476352 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B011DDC62621428700476352 /* TableViewController.m */; };
 		B011DDC92621428700476352 /* MainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B011DDC72621428700476352 /* MainTableViewController.xib */; };
 		B011DDCD2621467800476352 /* PersonMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = B011DDCC2621467700476352 /* PersonMgr.m */; };
 		B011DDD226216D3200476352 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B011DDD026216D3200476352 /* DetailViewController.m */; };
@@ -26,8 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B011DDC52621428700476352 /* MainTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
-		B011DDC62621428700476352 /* MainTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		B011DDC52621428700476352 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B011DDC62621428700476352 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B011DDC72621428700476352 /* MainTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewController.xib; sourceTree = "<group>"; };
 		B011DDCB2621467700476352 /* PersonMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonMgr.h; sourceTree = "<group>"; };
 		B011DDCC2621467700476352 /* PersonMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonMgr.m; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 				B076A98C261D842A00C11996 /* SceneDelegate.m */,
 				B076A98E261D842A00C11996 /* ViewController.h */,
 				B076A98F261D842A00C11996 /* ViewController.m */,
-				B011DDC52621428700476352 /* MainTableViewController.h */,
-				B011DDC62621428700476352 /* MainTableViewController.m */,
+				B011DDC52621428700476352 /* TableViewController.h */,
+				B011DDC62621428700476352 /* TableViewController.m */,
 				B011DDC72621428700476352 /* MainTableViewController.xib */,
 				B011DDCF26216D3200476352 /* DetailViewController.h */,
 				B011DDD026216D3200476352 /* DetailViewController.m */,
@@ -213,7 +213,7 @@
 				B011DDD226216D3200476352 /* DetailViewController.m in Sources */,
 				B076A99B261D842B00C11996 /* main.m in Sources */,
 				B076A98D261D842A00C11996 /* SceneDelegate.m in Sources */,
-				B011DDC82621428700476352 /* MainTableViewController.m in Sources */,
+				B011DDC82621428700476352 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
