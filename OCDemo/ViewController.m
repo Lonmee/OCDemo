@@ -19,9 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
 # pragma mark - OC & Swift test
-    [OCPersonTest test];
-    [SwiftPersonTest test];
+//    [OCPersonTest test];
+//    [SwiftPersonTest test];
 }
 
 @end
