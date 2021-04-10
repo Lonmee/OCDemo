@@ -81,8 +81,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here, for example:
     // Create the next view controller.
-    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"detailViewController" bundle:nil];
-    
+    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    Person * person = persons[indexPath.row];
+    detailViewController.title = person.firstName;
     // Pass the selected object to the new view controller.
     
     // Push the view controller.
