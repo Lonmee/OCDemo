@@ -84,6 +84,7 @@
     DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     Person * person = persons[indexPath.row];
     detailViewController.title = person.firstName;
+    detailViewController.hidesBottomBarWhenPushed = true;
     // Pass the selected object to the new view controller.
     
     // Push the view controller.
