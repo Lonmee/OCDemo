@@ -42,4 +42,17 @@
     return a + b;
 }
 
+void seek(id self, SEL _cmd, Person *person, NSString *present) {
+    NSLog(@"%@ seeking %@ %@", [self firstName], person.firstName, present);
+}
+
++ (BOOL)resolveInstanceMethod:(SEL)sel {
+    NSString * methodName = NSStringFromSelector(sel);
+    NSLog(@"%@", methodName);
+    if ([methodName isEqualToString:@"seek:look:"]) {
+        return class_addMethod(self, sel, (IMP)seek, "v@:");
+    }
+    return NO;
+}
+
 @end

@@ -48,7 +48,7 @@
         <!--Item-->
         <scene sceneID="1n2-Wq-VPy">
             <objects>
-                <viewController id="p7J-Km-W08" sceneMemberID="viewController">
+                <viewController id="p7J-Km-W08" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vOx-hI-BN2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +94,6 @@
         <!--Item-->
         <scene sceneID="nYU-3L-Pfs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vyg-LD-MMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="bww-tR-C7g" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="pxx-tq-VAC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HQK-vU-gdV">
@@ -105,6 +104,7 @@
                         <segue destination="p7J-Km-W08" kind="relationship" relationship="rootViewController" id="7TX-aJ-3S7"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyg-LD-MMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-384" y="349"/>
         </scene>

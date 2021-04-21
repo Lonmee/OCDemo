@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)say:(NSString *)word to:(Person *)person;
 + (void)talk:(NSString *)word with:(Person *)person;
 
+- (void)seek:(Person *)person look:(NSString *)present;
+
 @end
 
 NS_ASSUME_NONNULL_END

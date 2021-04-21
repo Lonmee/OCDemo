@@ -26,4 +26,12 @@
     [swiftPersonA talkWithWord:@"soso" to:swiftPersonB];
 }
 
++ (void)test2 {
+    Person * _personA = [[Person alloc] initWithFirstName:@"Lonmee" lastName:@"Hou" sex:YES];
+    Person * _personB = [[Person alloc] initWithFirstName:@"Lunar" lastName:@"Zhang" sex:NO];
+    
+    [_personA say:@"wanna fucing you" to:_personB];
+    [_personA seek:_personB look:@"hardly"];
+}
+
 @end

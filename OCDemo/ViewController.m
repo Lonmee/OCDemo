@@ -22,6 +22,7 @@
     
 # pragma mark - OC & Swift test
 //    [OCPersonTest test];
+    [OCPersonTest test2];
 //    [SwiftPersonTest test];
 }
 
