@@ -19,8 +19,14 @@ class Person2: NSObject {
         self.secondName = secondName
         self.sex = sex
     }
+    
     @objc
     func talk(word: String, to: Person2) -> Void {
         print(self.firstName + " talking \"" + word + "\" to " + to.firstName)
+    }
+    
+    @objc
+    func invite(_ to: Person, look: String) -> Void {
+        print(self.firstName + " invite " + to.firstName + " " + look)
     }
 }

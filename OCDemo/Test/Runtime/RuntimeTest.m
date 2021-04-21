@@ -12,7 +12,8 @@
     Person * _personA = [[Person alloc] initWithFirstName:@"Lonmee" lastName:@"Hou" sex:YES];
     Person * _personB = [[Person alloc] initWithFirstName:@"Lunar" lastName:@"Zhang" sex:NO];
     
-    [_personA say:@"wanna fucing you" to:_personB];
-    [_personA seek:_personB look:@"hardly"];
+    [_personA say:@"missing you" to:_personB];
+    [_personA seek:_personB look:@"anxiously"];
+    [_personA invite:_personB look:@"sincerely"];
 }
 @end

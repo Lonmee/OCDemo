@@ -11,7 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Person : NSObject
 
-@property int yearOfBirth;
 @property (readonly) NSString * firstName;
 @property (readonly) NSString * lastName;
 
@@ -20,7 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)say:(NSString *)word to:(Person *)person;
 + (void)talk:(NSString *)word with:(Person *)person;
 
+#pragma runtime method
 - (void)seek:(Person *)person look:(NSString *)present;
+- (void)invite:(Person *)person look:(NSString *)present;
 
 @end
 

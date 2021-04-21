@@ -48,11 +48,20 @@ void seek(id self, SEL _cmd, Person *person, NSString *present) {
 
 + (BOOL)resolveInstanceMethod:(SEL)sel {
     NSString * methodName = NSStringFromSelector(sel);
-    NSLog(@"%@", methodName);
+    NSLog(@"\"%@\" called @runtime in \"resolveInstanceMethod\"", methodName);
     if ([methodName isEqualToString:@"seek:look:"]) {
         return class_addMethod(self, sel, (IMP)seek, "v@:");
     }
     return NO;
+}
+
+- (id)forwardingTargetForSelector:(SEL)aSelector{
+    NSString * methodName = NSStringFromSelector(aSelector);
+    NSLog(@"\"%@\" called @runtime in \"forwardingTargetForSelector\"", methodName);
+    if ([methodName isEqualToString:@"invite:look:"]) {
+        return [[Person2 alloc]initWithFirstName:@"tempPerson" secondName:@"runtime" sex:NO];
+    }
+    return [super forwardingTargetForSelector:aSelector];
 }
 
 @end
