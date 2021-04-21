@@ -59,9 +59,36 @@ void seek(id self, SEL _cmd, Person *person, NSString *present) {
     NSString * methodName = NSStringFromSelector(aSelector);
     NSLog(@"\"%@\" called @runtime in \"forwardingTargetForSelector\"", methodName);
     if ([methodName isEqualToString:@"invite:look:"]) {
-        return [[Person2 alloc]initWithFirstName:@"tempPerson" secondName:@"runtime" sex:NO];
+        return [[Person2 alloc]initWithFirstName:@"Agent" secondName:@"runtime" sex:NO];
     }
     return [super forwardingTargetForSelector:aSelector];
+}
+
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+    NSString * methodName = NSStringFromSelector(aSelector);
+    NSLog(@"\"%@\" called @runtime in \"methodSignatureForSelector\"", methodName);
+    if ([methodName isEqualToString:@"wandering:with:"]) {
+        return [NSMethodSignature signatureWithObjCTypes:"v@:"];
+    }
+    return [super methodSignatureForSelector:aSelector];
+}
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    SEL sel = anInvocation.selector;
+    NSString * methodName = NSStringFromSelector(sel);
+    NSLog(@"\"%@\" called @runtime in \"forwardInvocation\"", methodName);
+    Person2 *person2 = [[Person2 alloc]initWithFirstName:@"Agent2" secondName:@"runtime" sex:NO];
+    if ([person2 respondsToSelector:sel]) {
+        NSLog(@"\"%@\" test responds @runtime in \"forwardInvocation\"", methodName);
+        [anInvocation invokeWithTarget:person2];
+    } else {
+        [super forwardInvocation:anInvocation];
+    }
+}
+
+- (void)doesNotRecognizeSelector:(SEL)aSelector{
+    NSString * methodName = NSStringFromSelector(aSelector);
+    NSLog(@"\"%@\" called @runtime in \"doesNotRecognizeSelector\"", methodName);
 }
 
 @end

@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma runtime method
 - (void)seek:(Person *)person look:(NSString *)present;
 - (void)invite:(Person *)person look:(NSString *)present;
+- (void)wandering:(NSString *)where with:(Person *)person;
+- (void)leave:(Person *)person for:(NSString *)word;
 
 @end
 

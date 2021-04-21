@@ -29,4 +29,9 @@ class Person2: NSObject {
     func invite(_ to: Person, look: String) -> Void {
         print(self.firstName + " invite " + to.firstName + " " + look)
     }
+    
+    @objc
+    func wandering(_ in: String, with: Person) -> Void {
+        print(self.firstName + " wandering " + `in` + " with " + with.firstName)
+    }
 }
