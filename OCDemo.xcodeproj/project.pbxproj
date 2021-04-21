@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00974F826308259000D720D /* RuntimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B00974F726308259000D720D /* RuntimeTest.m */; };
 		B011DDC82621428700476352 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B011DDC62621428700476352 /* TableViewController.m */; };
 		B011DDC92621428700476352 /* MainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B011DDC72621428700476352 /* MainTableViewController.xib */; };
 		B011DDCD2621467800476352 /* PersonMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = B011DDCC2621467700476352 /* PersonMgr.m */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B00974F626308259000D720D /* RuntimeTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeTest.h; sourceTree = "<group>"; };
+		B00974F726308259000D720D /* RuntimeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeTest.m; sourceTree = "<group>"; };
 		B011DDC52621428700476352 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		B011DDC62621428700476352 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B011DDC72621428700476352 /* MainTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewController.xib; sourceTree = "<group>"; };
@@ -66,14 +69,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B0510550261F275A00B97CF2 /* TestOC+Swfit */ = {
+		B00974F526308246000D720D /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				B00974F626308259000D720D /* RuntimeTest.h */,
+				B00974F726308259000D720D /* RuntimeTest.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		B0510550261F275A00B97CF2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B00974F526308246000D720D /* Runtime */,
 				B0510551261F276200B97CF2 /* PersonOC+Swift */,
 				B011DDCB2621467700476352 /* PersonMgr.h */,
 				B011DDCC2621467700476352 /* PersonMgr.m */,
 			);
-			path = "TestOC+Swfit";
+			path = Test;
 			sourceTree = "<group>";
 		};
 		B0510551261F276200B97CF2 /* PersonOC+Swift */ = {
@@ -120,7 +133,7 @@
 				B011DDCF26216D3200476352 /* DetailViewController.h */,
 				B011DDD026216D3200476352 /* DetailViewController.m */,
 				B011DDD126216D3200476352 /* DetailViewController.xib */,
-				B0510550261F275A00B97CF2 /* TestOC+Swfit */,
+				B0510550261F275A00B97CF2 /* Test */,
 				B076A991261D842A00C11996 /* Main.storyboard */,
 				B076A994261D842B00C11996 /* Assets.xcassets */,
 				B076A996261D842B00C11996 /* LaunchScreen.storyboard */,
@@ -207,6 +220,7 @@
 				B011DDCD2621467800476352 /* PersonMgr.m in Sources */,
 				B076A98A261D842A00C11996 /* AppDelegate.m in Sources */,
 				B0510559261F35F100B97CF2 /* OCPersonTest.m in Sources */,
+				B00974F826308259000D720D /* RuntimeTest.m in Sources */,
 				B076A9A4261D941000C11996 /* Person.m in Sources */,
 				B0374C14261E0B9F00907A44 /* Person2.swift in Sources */,
 				B0510554261F29BF00B97CF2 /* SwiftPersonTest.swift in Sources */,

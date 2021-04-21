@@ -6,8 +6,6 @@
 //
 
 #import "ViewController.h"
-#import "OCDemo-Swift.h"
-#import "OCPersonTest.h"
 
 @interface ViewController ()
 
@@ -21,9 +19,9 @@
     
     
 # pragma mark - OC & Swift test
-//    [OCPersonTest test];
-    [OCPersonTest test2];
-//    [SwiftPersonTest test];
+    [OCPersonTest test];
+    [SwiftPersonTest test];
+    [RuntimeTest test];
 }
 
 @end

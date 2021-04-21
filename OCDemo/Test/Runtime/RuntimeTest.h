@@ -1,19 +1,17 @@
 //
-//  OCPersonTest.h
+//  RuntimeTest.h
 //  OCDemo
 //
-//  Created by Lonmee on 4/8/21.
+//  Created by Lonmee on 4/21/21.
 //
 
 #import <Foundation/Foundation.h>
 #import "Person.h"
-#import "OCDemo-Swift.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OCPersonTest : NSObject
+@interface RuntimeTest : NSObject
 + (void)test;
-+ (void)test2;
 @end
 
 NS_ASSUME_NONNULL_END

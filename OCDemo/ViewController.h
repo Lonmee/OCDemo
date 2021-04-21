@@ -6,7 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Person.h"
+#import "OCPersonTest.h"
+#import "OCDemo-Swift.h"
+#import "RuntimeTest.h"
 
 @interface ViewController : UIViewController
 
