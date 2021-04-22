@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import "Person+Work.h"
 
+static const void * _Nullable dutyKey = &dutyKey;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CategoryTest : NSObject
