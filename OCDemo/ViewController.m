@@ -19,9 +19,10 @@
     
     
 # pragma mark - OC & Swift test
-//    [OCPersonTest test];
-//    [SwiftPersonTest test];
-    [RuntimeTest test];
+    //    [OCPersonTest test];
+    //    [SwiftPersonTest test];
+    //    [RuntimeTest test];
+    [CategoryTest test];
 }
 
 @end

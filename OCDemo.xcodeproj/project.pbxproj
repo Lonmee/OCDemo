@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B00974F826308259000D720D /* RuntimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B00974F726308259000D720D /* RuntimeTest.m */; };
+		B009750526309EA4000D720D /* Person+Work.m in Sources */ = {isa = PBXBuildFile; fileRef = B009750426309EA4000D720D /* Person+Work.m */; };
 		B011DDC82621428700476352 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B011DDC62621428700476352 /* TableViewController.m */; };
 		B011DDC92621428700476352 /* MainTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B011DDC72621428700476352 /* MainTableViewController.xib */; };
 		B011DDCD2621467800476352 /* PersonMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = B011DDCC2621467700476352 /* PersonMgr.m */; };
 		B011DDD226216D3200476352 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B011DDD026216D3200476352 /* DetailViewController.m */; };
 		B011DDD326216D3200476352 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B011DDD126216D3200476352 /* DetailViewController.xib */; };
 		B0374C14261E0B9F00907A44 /* Person2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0374C13261E0B9F00907A44 /* Person2.swift */; };
+		B04FF14A26311A3A00A1D8E4 /* CategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B04FF14926311A3A00A1D8E4 /* CategoryTest.m */; };
 		B0510554261F29BF00B97CF2 /* SwiftPersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0510553261F29BF00B97CF2 /* SwiftPersonTest.swift */; };
 		B0510559261F35F100B97CF2 /* OCPersonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B0510558261F35F100B97CF2 /* OCPersonTest.m */; };
 		B076A98A261D842A00C11996 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B076A989261D842A00C11996 /* AppDelegate.m */; };
@@ -29,6 +31,8 @@
 /* Begin PBXFileReference section */
 		B00974F626308259000D720D /* RuntimeTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeTest.h; sourceTree = "<group>"; };
 		B00974F726308259000D720D /* RuntimeTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeTest.m; sourceTree = "<group>"; };
+		B009750326309EA4000D720D /* Person+Work.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Work.h"; sourceTree = "<group>"; };
+		B009750426309EA4000D720D /* Person+Work.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Work.m"; sourceTree = "<group>"; };
 		B011DDC52621428700476352 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		B011DDC62621428700476352 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		B011DDC72621428700476352 /* MainTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewController.xib; sourceTree = "<group>"; };
@@ -39,6 +43,9 @@
 		B011DDD126216D3200476352 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		B0374C12261E0B9E00907A44 /* OCDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		B0374C13261E0B9F00907A44 /* Person2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person2.swift; sourceTree = "<group>"; };
+		B04FF14826311A3A00A1D8E4 /* CategoryTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryTest.h; sourceTree = "<group>"; };
+		B04FF14926311A3A00A1D8E4 /* CategoryTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryTest.m; sourceTree = "<group>"; };
+		B04FF150263136B600A1D8E4 /* Person+Child.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Child.h"; sourceTree = "<group>"; };
 		B0510553261F29BF00B97CF2 /* SwiftPersonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPersonTest.swift; sourceTree = "<group>"; };
 		B0510557261F35F100B97CF2 /* OCPersonTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPersonTest.h; sourceTree = "<group>"; };
 		B0510558261F35F100B97CF2 /* OCPersonTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPersonTest.m; sourceTree = "<group>"; };
@@ -72,10 +79,31 @@
 		B00974F526308246000D720D /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				B04FF146263114D200A1D8E4 /* Method */,
+				B009750226309E7C000D720D /* Category */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		B009750226309E7C000D720D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B009750326309EA4000D720D /* Person+Work.h */,
+				B009750426309EA4000D720D /* Person+Work.m */,
+				B04FF14826311A3A00A1D8E4 /* CategoryTest.h */,
+				B04FF14926311A3A00A1D8E4 /* CategoryTest.m */,
+				B04FF150263136B600A1D8E4 /* Person+Child.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B04FF146263114D200A1D8E4 /* Method */ = {
+			isa = PBXGroup;
+			children = (
 				B00974F626308259000D720D /* RuntimeTest.h */,
 				B00974F726308259000D720D /* RuntimeTest.m */,
 			);
-			path = Runtime;
+			path = Method;
 			sourceTree = "<group>";
 		};
 		B0510550261F275A00B97CF2 /* Test */ = {
@@ -221,11 +249,13 @@
 				B076A98A261D842A00C11996 /* AppDelegate.m in Sources */,
 				B0510559261F35F100B97CF2 /* OCPersonTest.m in Sources */,
 				B00974F826308259000D720D /* RuntimeTest.m in Sources */,
+				B009750526309EA4000D720D /* Person+Work.m in Sources */,
 				B076A9A4261D941000C11996 /* Person.m in Sources */,
 				B0374C14261E0B9F00907A44 /* Person2.swift in Sources */,
 				B0510554261F29BF00B97CF2 /* SwiftPersonTest.swift in Sources */,
 				B011DDD226216D3200476352 /* DetailViewController.m in Sources */,
 				B076A99B261D842B00C11996 /* main.m in Sources */,
+				B04FF14A26311A3A00A1D8E4 /* CategoryTest.m in Sources */,
 				B076A98D261D842A00C11996 /* SceneDelegate.m in Sources */,
 				B011DDC82621428700476352 /* TableViewController.m in Sources */,
 			);

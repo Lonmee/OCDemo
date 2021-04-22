@@ -35,3 +35,10 @@ class Person2: NSObject {
         print(self.firstName + " wandering " + `in` + " with " + with.firstName)
     }
 }
+
+extension NSString {
+    @objc
+    func withQuotation() -> String {
+        return "\"\(self)\""
+    }
+}

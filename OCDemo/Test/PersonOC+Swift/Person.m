@@ -42,6 +42,10 @@
     return a + b;
 }
 
+-(void)eat {
+    NSLog(@"Am eating");
+}
+
 void seek(id self, SEL _cmd, Person *person, NSString *present) {
     NSLog(@"%@ seeking %@ %@", [self firstName], person.firstName, present);
 }

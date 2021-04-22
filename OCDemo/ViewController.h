@@ -9,6 +9,7 @@
 #import "OCPersonTest.h"
 #import "OCDemo-Swift.h"
 #import "RuntimeTest.h"
+#import "CategoryTest.h"
 
 @interface ViewController : UIViewController
 
