@@ -23,6 +23,13 @@
     //    [SwiftPersonTest test];
     //    [RuntimeTest test];
     [CategoryTest test];
+    
+    NSObject *o0 = [NSObject init];
+    NSObject * o1 = [NSObject new];
+    NSObject * o2 = [[NSObject alloc]init];
+    NSObject * o3 = [o0 init];
+    NSObject *o4 = o1.init;
+    
 }
 
 @end
