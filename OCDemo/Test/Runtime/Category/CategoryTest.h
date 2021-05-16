@@ -7,6 +7,9 @@
 
 #import <Foundation/Foundation.h>
 #import "Person+Work.h"
+#import "Person+Child.h"
+#import "OCDemo-Swift.h"
+#import "SubViewController.h"
 
 static const void * _Nullable dutyKey = &dutyKey;
 

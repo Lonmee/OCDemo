@@ -26,6 +26,10 @@
 		B076A998261D842B00C11996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B076A996261D842B00C11996 /* LaunchScreen.storyboard */; };
 		B076A99B261D842B00C11996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B076A99A261D842B00C11996 /* main.m */; };
 		B076A9A4261D941000C11996 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B076A9A3261D941000C11996 /* Person.m */; };
+		B08E27B32650FA3200C11372 /* KVOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B08E27B22650FA3200C11372 /* KVOTest.m */; };
+		B08E27B62650FAF600C11372 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = B08E27B52650FAF600C11372 /* Observer.m */; };
+		B08E27B92650FCDC00C11372 /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = B08E27B82650FCDC00C11372 /* Foo.m */; };
+		B0F6EEDD264F77E600D2A2A6 /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F6EEDC264F77E600D2A2A6 /* SubViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,14 @@
 		B076A99A261D842B00C11996 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B076A9A2261D941000C11996 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		B076A9A3261D941000C11996 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B08E27B12650FA3200C11372 /* KVOTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOTest.h; sourceTree = "<group>"; };
+		B08E27B22650FA3200C11372 /* KVOTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOTest.m; sourceTree = "<group>"; };
+		B08E27B42650FAF600C11372 /* Observer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		B08E27B52650FAF600C11372 /* Observer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
+		B08E27B72650FCDC00C11372 /* Foo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
+		B08E27B82650FCDC00C11372 /* Foo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
+		B0F6EEDB264F77E600D2A2A6 /* SubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		B0F6EEDC264F77E600D2A2A6 /* SubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,7 @@
 		B00974F526308246000D720D /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				B08E27B02650FA1500C11372 /* KVO */,
 				B04FF146263114D200A1D8E4 /* Method */,
 				B009750226309E7C000D720D /* Category */,
 			);
@@ -168,8 +181,23 @@
 				B076A999261D842B00C11996 /* Info.plist */,
 				B076A99A261D842B00C11996 /* main.m */,
 				B0374C12261E0B9E00907A44 /* OCDemo-Bridging-Header.h */,
+				B0F6EEDB264F77E600D2A2A6 /* SubViewController.h */,
+				B0F6EEDC264F77E600D2A2A6 /* SubViewController.m */,
 			);
 			path = OCDemo;
+			sourceTree = "<group>";
+		};
+		B08E27B02650FA1500C11372 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				B08E27B12650FA3200C11372 /* KVOTest.h */,
+				B08E27B22650FA3200C11372 /* KVOTest.m */,
+				B08E27B42650FAF600C11372 /* Observer.h */,
+				B08E27B52650FAF600C11372 /* Observer.m */,
+				B08E27B72650FCDC00C11372 /* Foo.h */,
+				B08E27B82650FCDC00C11372 /* Foo.m */,
+			);
+			path = KVO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,10 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F6EEDD264F77E600D2A2A6 /* SubViewController.m in Sources */,
 				B076A990261D842A00C11996 /* ViewController.m in Sources */,
 				B011DDCD2621467800476352 /* PersonMgr.m in Sources */,
 				B076A98A261D842A00C11996 /* AppDelegate.m in Sources */,
+				B08E27B32650FA3200C11372 /* KVOTest.m in Sources */,
 				B0510559261F35F100B97CF2 /* OCPersonTest.m in Sources */,
+				B08E27B92650FCDC00C11372 /* Foo.m in Sources */,
 				B00974F826308259000D720D /* RuntimeTest.m in Sources */,
 				B009750526309EA4000D720D /* Person+Work.m in Sources */,
 				B076A9A4261D941000C11996 /* Person.m in Sources */,
@@ -258,6 +289,7 @@
 				B04FF14A26311A3A00A1D8E4 /* CategoryTest.m in Sources */,
 				B076A98D261D842A00C11996 /* SceneDelegate.m in Sources */,
 				B011DDC82621428700476352 /* TableViewController.m in Sources */,
+				B08E27B62650FAF600C11372 /* Observer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 #import "Person.h"
+#import "SubViewController.h"
+#import "KVOTest.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -7,6 +7,8 @@
 #import "Person+Work.h"
 @implementation Person (Work)
 @dynamic duty;
+
+#pragma dynamic propery in catagory @ runtime
 -(NSString *)duty {
     return objc_getAssociatedObject(self, "duty");
 }
@@ -18,6 +20,7 @@
 -(void)code:(NSString *)content by:(NSString *)program {
     NSLog(@"Am coding %@ by %@ for my duty: %@", content, program, self.duty);
 }
+
 -(void)say:(NSString *)content to:(Person *)person {
     NSLog(@"%@ said %@ from category to %@", self.firstName, content, person.firstName);
 }

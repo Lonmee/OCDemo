@@ -10,6 +10,7 @@
 #import "OCDemo-Swift.h"
 #import "RuntimeTest.h"
 #import "CategoryTest.h"
+#import "KVOTest.h"
 
 @interface ViewController : UIViewController
 
