@@ -12,19 +12,19 @@
     Person * _personA = [[Person alloc] initWithFirstName:@"Lonmee" lastName:@"Hou" sex:YES];
     Person * _personB = [[Person alloc] initWithFirstName:@"Lunar" lastName:@"Zhang" sex:NO];
     
-#pragma _objc_msgForward() @ runtime
+#pragma mark - _objc_msgForward() @ runtime
     [_personA say:@"missing you" to:_personB];
     [_personA seek:_personB look:@"anxiously"];
     [_personA invite:_personB look:@"sincerely"];
     [_personA wandering:@"in snow" with:_personB];
 //    [_personA leave:_personB for:@"finally"];
     
-#pragma Instance method added to Person @ runtime
+#pragma mark - Instance method added to Person @ runtime
     Method plugMethod = class_getInstanceMethod([self class], @selector(plugMethod));
     bool res = class_addMethod([Person class], @selector(plugMethod), method_getImplementation(plugMethod), "v@");
     NSLog(@"method:plugMethod selector&implementation added to Person:%d", res);
     [_personA performSelector:@selector(plugMethod)];
-#pragma Method swizzling
+#pragma mark - Method swizzling
     Method methodOriginal = class_getInstanceMethod(SubViewController.class, @selector(viewDidLoad));
     Method methodInstead = class_getInstanceMethod(self.class, @selector(insteadViewDidLoad));
     bool added = class_addMethod([SubViewController class], @selector(viewDidLoad), method_getImplementation(methodInstead), "v@");

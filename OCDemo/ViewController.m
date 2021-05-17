@@ -22,8 +22,9 @@
     //    [OCPersonTest test];
     //    [SwiftPersonTest test];
     //    [RuntimeTest test];
-    [CategoryTest test];
+    //    [CategoryTest test];
     //    [KVOTest test];
+    //    [RunLoopTest test];
 }
 
 @end

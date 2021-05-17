@@ -11,6 +11,7 @@
 #import "RuntimeTest.h"
 #import "CategoryTest.h"
 #import "KVOTest.h"
+#import "RunLoopTest.h"
 
 @interface ViewController : UIViewController
 

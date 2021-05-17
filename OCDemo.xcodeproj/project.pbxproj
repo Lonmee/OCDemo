@@ -18,6 +18,8 @@
 		B04FF14A26311A3A00A1D8E4 /* CategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B04FF14926311A3A00A1D8E4 /* CategoryTest.m */; };
 		B0510554261F29BF00B97CF2 /* SwiftPersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0510553261F29BF00B97CF2 /* SwiftPersonTest.swift */; };
 		B0510559261F35F100B97CF2 /* OCPersonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B0510558261F35F100B97CF2 /* OCPersonTest.m */; };
+		B058A3762651F95B00E6D4D4 /* RunLoopTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B058A3752651F95B00E6D4D4 /* RunLoopTest.m */; };
+		B058A379265234A000E6D4D4 /* RunLoopObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = B058A378265234A000E6D4D4 /* RunLoopObserver.m */; };
 		B076A98A261D842A00C11996 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B076A989261D842A00C11996 /* AppDelegate.m */; };
 		B076A98D261D842A00C11996 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B076A98C261D842A00C11996 /* SceneDelegate.m */; };
 		B076A990261D842A00C11996 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B076A98F261D842A00C11996 /* ViewController.m */; };
@@ -53,6 +55,10 @@
 		B0510553261F29BF00B97CF2 /* SwiftPersonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPersonTest.swift; sourceTree = "<group>"; };
 		B0510557261F35F100B97CF2 /* OCPersonTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPersonTest.h; sourceTree = "<group>"; };
 		B0510558261F35F100B97CF2 /* OCPersonTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCPersonTest.m; sourceTree = "<group>"; };
+		B058A3742651F95B00E6D4D4 /* RunLoopTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopTest.h; sourceTree = "<group>"; };
+		B058A3752651F95B00E6D4D4 /* RunLoopTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopTest.m; sourceTree = "<group>"; };
+		B058A377265234A000E6D4D4 /* RunLoopObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopObserver.h; sourceTree = "<group>"; };
+		B058A378265234A000E6D4D4 /* RunLoopObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopObserver.m; sourceTree = "<group>"; };
 		B076A985261D842A00C11996 /* OCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B076A988261D842A00C11996 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B076A989261D842A00C11996 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 		B0510550261F275A00B97CF2 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				B058A3732651F86F00E6D4D4 /* RunLoop */,
 				B00974F526308246000D720D /* Runtime */,
 				B0510551261F276200B97CF2 /* PersonOC+Swift */,
 				B011DDCB2621467700476352 /* PersonMgr.h */,
@@ -141,6 +148,17 @@
 				B0510558261F35F100B97CF2 /* OCPersonTest.m */,
 			);
 			path = "PersonOC+Swift";
+			sourceTree = "<group>";
+		};
+		B058A3732651F86F00E6D4D4 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				B058A3742651F95B00E6D4D4 /* RunLoopTest.h */,
+				B058A3752651F95B00E6D4D4 /* RunLoopTest.m */,
+				B058A377265234A000E6D4D4 /* RunLoopObserver.h */,
+				B058A378265234A000E6D4D4 /* RunLoopObserver.m */,
+			);
+			path = RunLoop;
 			sourceTree = "<group>";
 		};
 		B076A97C261D842A00C11996 = {
@@ -289,7 +307,9 @@
 				B04FF14A26311A3A00A1D8E4 /* CategoryTest.m in Sources */,
 				B076A98D261D842A00C11996 /* SceneDelegate.m in Sources */,
 				B011DDC82621428700476352 /* TableViewController.m in Sources */,
+				B058A3762651F95B00E6D4D4 /* RunLoopTest.m in Sources */,
 				B08E27B62650FAF600C11372 /* Observer.m in Sources */,
+				B058A379265234A000E6D4D4 /* RunLoopObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
